@@ -1,0 +1,34 @@
+.title {
+  position: absolute;
+  font-size: 2em;
+  font-weight: bolder;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  margin-top: 110px
+}
+img {
+  margin-top: 55px;
+  margin-right: -245px;
+}
+.subtitle {
+  color: #6e757c;
+  width: 20rem;
+  text-align: center;
+  position: absolute;
+  margin-top: 10rem;
+  @screen md {
+    width: 30rem;
+  }
+}
+.btn {
+  border-radius: 10px;
+  color: white;
+  padding: 0.30rem 0.75rem;
+}
+.btn-all {
+  background-color: #6F757C;
+}
+.btn-now {
+  background-color: transparent
+}

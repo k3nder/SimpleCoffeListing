@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background: #111315;
+  background-image: url('./assets/bg-cafe.jpg');
+  background-size: auto; /* Ajusta el tamaño de la imagen automáticamente */
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.bgimg {
+
+}

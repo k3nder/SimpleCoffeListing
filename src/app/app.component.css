@@ -1,0 +1,18 @@
+.panel {
+  background-color: #1B1D1F;
+  margin-bottom: 170px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 200px;
+  border-radius: 15px;
+  @screen md {
+    margin-right: 115px;
+    margin-left: 115px;
+  }
+}
+.spacer {
+  height: 50px;
+  margin: 0 0 -50px 0;
+  /* margin: 20px 0 -50px 0; use this if you want #container to have a 'bottom padding', in this case of 20px */
+  background: transparent; /* you'll need this if #container's parent element has a different background from #container itself */
+}

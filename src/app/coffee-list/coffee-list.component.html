@@ -1,0 +1,28 @@
+<div class="flex justify-center">
+  <ul class="container-list">
+    <li class="container-list-item" *ngFor="let coffee of CoffeesService.coffees">
+      <span>
+        <p *ngIf="coffee.popular" class="container-list-item-popular">Popular</p>
+        <img [src]="coffee.image" alt="" class="container-list-item-image">
+      </span>
+      <span class="container-list-item-np">
+        <p class="container-list-item-name">{{coffee.name}}</p>
+      <div class="container-list-item-price">
+        {{coffee.price}}
+      </div>
+      </span>
+      <span class="container-list-item-rates-group">
+        <!--stars rate-->
+        <div class="container-list-item-rates">
+          <img *ngIf="coffee.votes == 0" src="../../assets/Star.svg" alt="star">
+          <img *ngIf="coffee.votes != 0" src="../../assets/Star_fill.svg" alt="star">
+          <p *ngIf="coffee.votes == 0 && coffee.rating == 0" class="container-list-item-rates-no_rateing_message" >No ratings</p>
+          <p *ngIf="coffee.votes != 0" class="container-list-item-rates-rateing" >{{coffee.rating}}</p>
+          <p *ngIf="coffee.votes != 0" class="container-list-item-rates-votes" >({{coffee.votes}} votes)</p>
+        </div>
+        <!-- stock -->
+        <p *ngIf="!coffee.available" class="container-list-item-stock_message" >Sold out</p>
+      </span>
+    </li>
+  </ul>
+</div>

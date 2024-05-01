@@ -1,0 +1,70 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+}
+.container-list {
+  display: grid;
+  gap: 1rem;
+  @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+}
+.container-list-item {
+  margin: 0.75rem;
+}
+.container-list-item-popular {
+  position: absolute;
+  margin-top: 0.25rem;
+  border-radius: 1rem;
+  background: #F6C768;
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  @apply px-3.5;
+}
+.container-list-item-image {
+  border-radius: 0.75rem;
+}
+.container-list-item-np {
+  display: flex;
+}
+.container-list-item-name {
+  margin-top: 0.5rem;
+  color: white;
+}
+.container-list-item-price {
+  background-color: #BEE3CC;
+  padding: 2px 0.5rem 2px 0.52rem;
+  font-size: 13px;
+  font-weight: bold;
+  @apply px-2;
+  @apply ml-auto mt-2 rounded;
+}
+.container-list-item-rates-group {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.container-list-item-rates {
+  display: flex;
+}
+.container-list-item-rates-no_rateing_message {
+  margin-left: 0.25rem;
+  font-family: "DM Sans", sans-serif;
+}
+.container-list-item-rates-rateing {
+  margin-left: 0.25rem;
+  color: white;
+  font-weight: bold;
+}
+.container-list-item-rates-votes {
+  margin-left: 0.25rem;
+  color: #6e757c;
+  font-family: "DM Sans", sans-serif;
+}
+.container-list-item-stock_message {
+  margin-left: auto;
+  font-family: "DM Sans", sans-serif;
+  color: #ED735D;
+}
